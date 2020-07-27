@@ -1,0 +1,88 @@
+<html>  
+    <head>
+        <title>Contact Us</title>
+        <link rel="stylesheet" href="css/style2.css" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="menu">
+            <div id="heading1">
+                <h2><a href="home.php">BUS MANAGEMENT SYSTEM</a></h2><hr>
+                <!--<small class="text-muted">Welcome to our homepage</small>-->
+            </div>
+            <br>
+            <div>
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                    <a class="nav-link" href="home.php">Home</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="login.php">Login</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="registration.php">Register</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link active" href="contact.html">Contact Us</a>
+                    </li>
+                    <?php
+					          if (isset($_SESSION['username'])) {
+					        	echo "<li class='nav-item'>
+						        <a class='nav-link' href='index.php'>My Account</a>
+						        </li>";
+					}
+					?>
+                </ul>
+                <br>
+            </div>
+        </div>
+        <div class="lrmargin">
+              <div class="card">
+                <div class="card-header">
+                  Vivek Bhavsar
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Email:</h5>
+                  <p class="card-text">vivek131299@gmail.com</p>
+                  <h5 class="card-title">Mobile:</h5>
+                  <p class="card-text">9130510429</p>
+                  <a href="#" class="btn btn-primary">Facebook Profile</a>
+                </div>
+              </div>
+        </div>
+<br>
+        <div class="lrmargin">
+                <div class="card">
+                  <div class="card-header">
+                    Yash Bhakre
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Email:</h5>
+                    <p class="card-text">yashbhakre@gmail.com</p>
+                    <h5 class="card-title">Mobile:</h5>
+                    <p class="card-text">6545982155</p>
+                    <a href="#" class="btn btn-primary">Facebook Profile</a>
+                  </div>
+                </div>
+          </div>
+<br>
+          <div class="lrmargin">
+                <div class="card">
+                  <div class="card-header">
+                    Aditya Ghodekar
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Email:</h5>
+                    <p class="card-text">adityaghodekar@gmail.com</p>
+                    <h5 class="card-title">Mobile:</h5>
+                    <p class="card-text">8544562215</p>
+                    <a href="#" class="btn btn-primary">Facebook Profile</a>
+                  </div>
+                </div>
+          </div>
+          <br>
+          <br>
+    </body>
+    </html>
